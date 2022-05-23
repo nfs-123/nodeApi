@@ -42,6 +42,9 @@ app.get('/createFile', (req, res) => {
     }
   })
 })
+app.get('/serveHtml', (req, res) => {
+  res.sendFile(__dirname + '/test.html')
+})
 
 app.listen(port, () => {
   console.log(`Aapp listening on port ${port}`)
